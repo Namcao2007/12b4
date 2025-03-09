@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">   
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<head>
+<style>
+               .rainbow-text {
+            font-size: 24px;
+            font-weight: bold;
+            background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 3s linear infinite;
+        }
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        footer {
+            padding: 20px;
+            background-color: #fff;
+		text-align: center;
+        }
+    </style>
+	<div class="banner">
+    <div class="banner-text-wrapper">
+        <h1 class="banner-text">Thành viên tổ 1 lớp 12B4 trường THPT Hoằng Hóa 3!</h1>
+    </div>
+</div>
+	
+<div id="snow-container"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const snowContainer = document.getElementById("snow-container");
+
+        function createSnowflake() {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.innerHTML = "❄";
+            snowflake.style.left = Math.random() * window.innerWidth + "px";
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+            snowContainer.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+
+        setInterval(createSnowflake, 200);
+    });
+</script>
+
+    <div class="slogan">
+    	<div class="row">
+        	<div class="block_3">
+            	<h2>Tổ 1</h2>
+            	<p>🔥 Tổ 1 – Số 1,Không Ai Bằng!</p>
+            </div>
+            <div class="block_3">
+            	<h2>Gen-Z</h2>
+            	<p>💯 Không ngại thử,Không ngại sai!</p>
+            </div>
+            <div class="block_3">
+            	<h2>Kiến thức là sức mạnh!</h2>
+            	<p>📚 Học tập là chìa khóa!</p>
+            </div>
+        </div>    
+    </div>
+
+
+
+
+</head>
+
+<table>
+
+	<tr>
+        <td class="cell_text">
+            <h3>CAO ĐẠI NAM </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:13/12/2007.</li>
+                <li>Giới tính:Nam.</li>
+                <li>Nơi ở: Hoằng Thanh-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/caodainam0713">Facebook.</a></li>
+            </ul>
+            <h4>Sở thích:</h4>
+            <ul>
+                <li>Tìm hiểu về công nghệ💡📱 </li>
+                <li>Học Math🧮📐</li>
+                <li>Phiêu lưu,du lịch🌿✈️🏞️</li>
+                <li>Học ngoại ngữ (English)📚🌍🗣️</li>
+                <li>Nấu ăn🍳🥘</li>
+                <li>Chăm sóc thú cưng🐶🦴❤️</li>
+
+
+            </ul>
+        </td>
+        <td class="cell_img"><img src="img/1.jpg" class="img"></td>
+         
+    </tr>
+
+
+    <tr>
+
+        <td class="cell_img"><img src="img/2.jpg" class="img"></td>
+         
+        <td class="cell_text">
+            <h3>LÊ THỊ THỦY </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:28/12/2007.</li>
+                <li>Giới tính:Nữ.</li>
+                <li>Nơi ở: Hoằng Trường-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/le.thi.thuy.28122007">Facebook.</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Du lịch✈️  </li>
+                <li>Gặp gỡ bạn👫🤝 </li>
+                <li>Đọc sách📖</li>
+                <li>Nghe podcast🎧</li>
+                <li>Học nhảy💃🎶 </li>
+
+            </ul>
+        </td>
+        
+         
+    </tr>
+  
+
+     <tr>
+        <td class="cell_text">
+            <h3>LÊ BÁ TÚ </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:22/07/2007.</li>
+                <li>Giới tính:Nam.</li>
+                <li>Nơi ở: Hoằng Tiến-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/tu.le.623707">Facebook.</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Thư giãn, giải trí☕ </li>
+                <li>Xem phim🎬🍿</li>
+                <li>Đọc truyện.📖🌙</li>
+                <li>Ngắm cây cảnh🌿🪟</li>
+                <li>Tham gia lớp yoga💃</li>
+
+            </ul>
+        </td>
+        <td class="cell_img"><img src="img/3.jpg" class="img"></td>
+         
+    </tr>
+    
+    <tr>
+        <td class="cell_img"><img src="img/4.jpg" class="img"></td>
+        <td class="cell_text">
+            <h3> HÀ THỊ VÂN ANH</h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:28/10/2007</li>
+                <li>Giới tính:Nữ</li>
+                <li>Nơi ở: Hoằng Trường-Hoằng Hóa-Thanh Hóa</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3</li>
+                <li>Quốc tịch: Việt Nam</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/van.anh.396168">Facebook</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Vẽ tranh🎨</li>
+                <li>Ngắm các anh trai TEMPEST👀🎤💙</li>
+                <li>Du lịch✈️</li>
+                <li>Trang điểm, skincare💄</li>
+                <li>Chụp ảnh📸🌸</li>
+
+            </ul>
+        </td>
+        
+         
+    </tr>
+
+    <tr>
+        <td class="cell_text">
+            <h3>LÊ THỊ NHƯ NGỌC </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:14/11/2007.</li>
+                <li>Giới tính:Nữ.</li>
+                <li>Nơi ở: Hoằng Ngọc-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/profile.php?id=100083451296541">Facebook.</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Ngủ😴</li>
+                <li>Xem phim🎬</li>
+                <li>Đọc truyện📖</li>
+                <li>Đi chơi🌿</li>
+                <li>Chơi game🎮</li>
+
+            </ul>
+        </td>
+        <td class="cell_img"><img src="img/5.jpg" class="img"></td>
+         
+    </tr>
+
+    <tr>
+        <td class="cell_img"><img src="img/6.jpg" class="img"></td>
+        <td class="cell_text">
+            <h3>ĐẶNG VĂN DUY  </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:31/07/2007.</li>
+                <li>Giới tính:Nam.</li>
+                <li>Nơi ở: Hoằng Trường-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/DD310707V">Facebook.</a></li>
+            </ul>    
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Đọc sách📚☕</li>
+                <li>Đắm mình vào thiên nhiên🌿🏞️</li>
+                <li>Ngắm hoàng hôn🌇🌞</li>
+                <li>Xem phim🎬🍿</li>
+                <li>Đọc truyện trinh thám🕵️🔍</li>
+                <li>Nghe nhạc🎧🎶</li>
+
+            </ul>
+        </td>
+        
+         
+    </tr>
+
+     <tr>
+        
+        <td class="cell_text">
+            <h3>ĐINH VŨ THÀNH </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:24/12/2007.</li>
+                <li>Giới tính:Nam</li>
+                <li>Nơi ở: Hoằng Trường-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/vuthanh07">Facebook.</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Làm vườn🪴👒</li>
+                <li>Nghe nhạc🎶💙</li>
+                <li>Ngắm hoàng hôn🌇</li>
+                <li>Xem phim📺</li>
+                <li>Chạy bộ🏃😊</li>
+
+            </ul>
+        </td>
+        <td class="cell_img"><img src="img/7.jpg" class="img"></td>
+        
+         
+    </tr>
+    
+    <td class="cell_img"><img src="img/8.jpg" class="img"></td>
+        
+        <td class="cell_text">
+            <h3>NGUYỄN THỊ BẢO CHÂM </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:03/08/2007</li>
+                <li>Giới tính:Nữ</li>
+                <li>Nơi ở: Hoằng Thanh-Hoằng Hóa-Thanh Hóa</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3</li>
+                <li>Quốc tịch: Việt Nam</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/profile.php?id=100072494112957">Facebook</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Đếm tiền💰💵</li>
+                <li>Ăn uống🍔</li>
+                <li>Ngắm hoàng hôn🌇🌞</li>
+                <li>Ngắm trai đẹp👀💙🔥</li>
+                <li>Lấy chồng đại gia💍💸👑</li>
+                <li>Làm đẹp & thời trang💄👗</li>
+
+            </ul>
+        </td>
+        
+        
+         
+    </tr>
+
+         
+     <tr>
+        
+        <td class="cell_text">
+            <h3>TRƯƠNG ĐÌNH QUỲNH </h3>
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:14/05/2007.</li>
+                <li>Giới tính:Nam.</li>
+                <li>Nơi ở: Hoằng Trường-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/profile.php?id=100084356379497">Facebook.</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Xem phim🎬🍿</li>
+                <li>Chơi game (free fire, liên quân )🎮🔥</li>
+                <li>Ngắm hoàng hôn🌇💭</li>
+                <li>Giao lưu cùng bạn bè🤝🥤</li>
+                <li>Du lịch, khám phá✈️🌍</li>
+
+            </ul>
+        </td>
+        <td class="cell_img"><img src="img/9.jpg" class="img"></td>
+        
+         
+    </tr>
+
+    <td class="cell_img"><img src="img/10.jpg" class="img"></td>
+        
+        <td class="cell_text">
+            
+            <h3>PHẠM THỊ NHƯ QUỲNH </h3>
+            
+            <h4>Giới thiệu:</h4>
+            <ul>
+                <li>Ngày tháng năm sinh:13/11/2007.</li>
+                <li>Giới tính:Nữ.</li>
+                <li>Nơi ở: Hoằng Yến-Hoằng Hóa-Thanh Hóa.</li>
+                <li>Học tại trường học: Trường THPT Hoằng Hóa 3.</li>
+                <li>Quốc tịch: Việt Nam.</li>
+                <li>Thông tin liên hệ:<a href="https://www.facebook.com/pham.thi.nhu.quynh.139086">Facebook.</a></li>
+            </ul>
+             <h4>Sở thích:</h4>
+            <ul>
+                <li>Thích hát🎤🎶</li>
+                <li>Xem tik tok📱</li>
+                <li>Mua sắm online🛍️💳</li>
+                <li>Làm đẹp & thời trang💄👗</li>
+                <li>Chụp ảnh, quay video💡</li>
+            </ul>
+        </td>
+
+    </tr>
+    
+   
+
+</table>
+
+ <footer>
+        <p class="rainbow-text" >Em cảm ơn cô và các bạn đã xem phần bài làm của tổ chúng em!</p>
+    </footer>
+
+
+
+</body>
+</html>
+
+
+
